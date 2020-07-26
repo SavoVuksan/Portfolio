@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavoVuksan/Portfolio.git"
+  },
+  "author": "Savo Vuksan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SavoVuksan/Portfolio/issues"
+  },
+  "homepage": "https://github.com/SavoVuksan/Portfolio#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
