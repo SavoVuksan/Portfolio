@@ -1,0 +1,60 @@
+@use 'vars';
+
+@media only screen  and (orientation: portrait) and (max-width: 600px){
+    .home-container{
+        background-color: initial;
+        grid-template-columns: 100vw;
+        >img{
+            grid-column: 1;
+            grid-row: 1;
+            
+            z-index: -1;
+            height: 100vh;
+            width: unset;
+            transform: translate(-50%,0%) scale(-1,1);
+        }
+    }
+    
+    .heading-container{
+        background-color: initial;
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        text-align: right;
+        :nth-child(1){
+            margin-right: vars.$std-spacing;
+        }   
+    }
+
+    .heading{
+        
+        position: initial;
+        transform: initial;
+        margin-top: 50%;
+        margin-left: vars.$std-spacing;
+        font-size: vars.$display-heading-m;
+        
+    }
+
+    .nav{
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        z-index: 2;
+        display: none;
+        img{
+            width: 50px;
+            color: white;
+        }
+        ul{ 
+            padding: 0;
+        }
+        li{
+            display: block;
+            margin: vars.$big-spacing;
+            font-size: vars.$display-heading-m;
+        }
+    }
+
+
+}

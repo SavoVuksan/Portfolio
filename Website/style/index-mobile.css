@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Work Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+}
+@font-face {
+  font-family: "Space Mono", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+}
+@media only screen and (orientation: portrait) and (max-width: 600px) {
+  .home-container {
+    background-color: initial;
+    grid-template-columns: 100vw;
+  }
+  .home-container > img {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: -1;
+    height: 100vh;
+    width: unset;
+    transform: translate(-50%, 0%) scale(-1, 1);
+  }
+
+  .heading-container {
+    background-color: initial;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    text-align: right;
+  }
+  .heading-container :nth-child(1) {
+    margin-right: 20px;
+  }
+
+  .heading {
+    position: initial;
+    transform: initial;
+    margin-top: 50%;
+    margin-left: 20px;
+    font-size: 0.8em;
+  }
+
+  .nav {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    z-index: 2;
+    display: none;
+  }
+  .nav img {
+    width: 50px;
+    color: white;
+  }
+  .nav ul {
+    padding: 0;
+  }
+  .nav li {
+    display: block;
+    margin: 50px;
+    font-size: 0.8em;
+  }
+}
+
+/*# sourceMappingURL=index-mobile.css.map */
