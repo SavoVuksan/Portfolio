@@ -61,7 +61,15 @@
 
   .wai-container {
     padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     grid-template-columns: 1fr;
+    height: minmax(100vh, initial);
+    padding-bottom: 20px;
+  }
+
+  .wai-left {
+    text-align: center;
   }
 
   .center {
@@ -69,24 +77,28 @@
     top: initial;
     left: initial;
     transform: initial;
-    display: block;
+    display: inline-block;
     margin: auto;
+    margin-top: 20px;
   }
 
   .yellow-box {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 
   .img-box {
-    width: 300px;
-    height: 300px;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
   }
 
   .wai-right {
     grid-column: 1;
     grid-row: 2;
     text-align: center;
+    font-size: 11pt;
   }
   .wai-right .center-vertical {
     padding: 0;
@@ -95,8 +107,66 @@
     left: initial;
     transform: initial;
   }
+  .wai-right h1 {
+    margin-top: 0px;
+  }
   .wai-right p {
     text-align: left;
+  }
+
+  .work-container {
+    padding: 0 20px 0 20px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: inline-block;
+  }
+
+  .card-text {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    margin: 0;
+  }
+  .card-text h1 {
+    margin: revert;
+  }
+  .card-text p {
+    font-size: 11pt;
+  }
+
+  .contact-heading {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .contact-email {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .contact-socialmedia {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .contact-info {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .easteregg {
+    grid-column: 1;
+    grid-row: 5;
   }
 }
 

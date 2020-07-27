@@ -58,33 +58,43 @@
 
     .wai-container{
         padding: 0;
+        padding-left: vars.$std-spacing;
+        padding-right: vars.$std-spacing;
         grid-template-columns: 1fr;
+        height: minmax(100vh,initial);
+        padding-bottom: 20px;
     }   
 
     .wai-left{
-
+        text-align: center;
+        
     }
     .center{
         position: initial;
         top: initial;
         left: initial;
         transform: initial;
-        display: block;
+        display: inline-block;
         margin: auto;
+        margin-top: vars.$std-spacing;
     }
+    $wai-img-size: 200px;
     .yellow-box{
-        width: 300px;
-        height: 300px;
+        width: $wai-img-size;
+        height: $wai-img-size;
     }
     .img-box{
-        width: 300px;
-        height: 300px;
+        padding-left: vars.$std-spacing;
+        padding-top: vars.$std-spacing;
+        width: $wai-img-size;
+        height: $wai-img-size;
     }
 
     .wai-right{
         grid-column: 1;
         grid-row: 2;
         text-align: center;
+        font-size: vars.$text-size-m;
 
         .center-vertical{
             padding: 0;
@@ -92,11 +102,69 @@
             top: initial;
             left: initial;
             transform: initial;
+            
+        }
+        h1{
+            margin-top: 0px;
         }
 
         p{
             text-align: left;
         }
+    }
+
+    .work-container{
+       padding: 0 vars.$std-spacing 0 vars.$std-spacing;
+    }
+
+    .card{
+        grid-template-columns: 1fr;
+  
+    }
+    .card-img{
+        grid-column: 1;
+        grid-row: 1;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        display: inline-block;
+    }
+    .card-text{
+         grid-column: 1;
+         grid-row: 2;
+         text-align: center;
+         margin: 0;
+         h1{
+             margin: revert;
+         }
+         p{
+             font-size: vars.$text-size-m;
+         }
+         
+    }
+
+    .contact-container{
+
+    }
+    .contact-heading{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .contact-email{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .contact-socialmedia{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .contact-info{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .easteregg{
+        grid-column: 1;
+        grid-row: 5;
     }
 
 }
