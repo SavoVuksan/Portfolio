@@ -58,6 +58,46 @@
     margin: 50px;
     font-size: 0.8em;
   }
+
+  .wai-container {
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .center {
+    position: initial;
+    top: initial;
+    left: initial;
+    transform: initial;
+    display: block;
+    margin: auto;
+  }
+
+  .yellow-box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .img-box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .wai-right {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+  }
+  .wai-right .center-vertical {
+    padding: 0;
+    position: initial;
+    top: initial;
+    left: initial;
+    transform: initial;
+  }
+  .wai-right p {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=index-mobile.css.map */
