@@ -1,8 +1,10 @@
+
 {
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
