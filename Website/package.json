@@ -1,10 +1,9 @@
-
 {
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",
-  "type": "module",
+ 
   "scripts": {
     "test": "jest"
   },
@@ -19,6 +18,11 @@
   },
   "homepage": "https://github.com/SavoVuksan/Portfolio#readme",
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
     "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.10.4"
   }
 }
