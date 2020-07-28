@@ -11,25 +11,29 @@
 <body>
     <div class="home-container">
         <div class="heading-container">
+            <div class="burger">
+                <img src="./asset/image/Burger.svg" alt="">
+            </div>
             <h1>PORTFOLIO</h1>
-            <dot-pattern count-x="10" count-y="10" size="20" spacing="20" color="#AEAEAE"></dot-pattern>
+            <dot-pattern count-x="8" count-y="12" size="10" spacing="40" color="#AEAEAE33"></dot-pattern>
             <div class="heading">
                 <h1 class="fnt-regular">MY NAME IS</h1>
                 <h1 class="fnt-italic">SAVO VUKSAN</h1>
                 <h2 class="bg-signal text-black padding margin-0 dsp-inline-block">I'M A SOFTWARE DEVELOPER</h2>
             </div>
+            <img class="arrow-down" src="./asset/image/ArrowDownWhite.svg" alt="">
         </div>
         <div class="nav">
             <ul>
                 <li><img src="./asset/image/Close.svg" alt=""></li>
-                <li class="li-active">HOME</li>
-                <li>ABOUT</li>
-                <li>WORK</li>
-                <li>CONTACT</li>
+                <li id="home" class="li-active" target=".home-container">HOME</li>
+                <li id="about" target=".wai-container">ABOUT</li>
+                <li id="work" target=".work-container">WORK</li>
+                <li id="contact" target=".contact-container">CONTACT</li>
             </ul>
         </div>
-        
-            <img src="./asset/image/PIC1.jpg" alt="">
+
+            <img src="./asset/image/SelfieGif.gif" alt="">
         
     </div>
     <div class="wai-container padding-horizontal">
@@ -41,15 +45,20 @@
             <div class="img-box">
                 <img class="flip-x" src="./asset/image/PIC2.jpg" alt="">
             </div>
+
+            <dot-pattern count-x="4" count-y="4" size="20" spacing="20" color="#0000001f"></dot-pattern> 
         </div>
 
         </div>
         <div class="wai-right">
-            <div class=" center-vertical">
+            <div class="center-vertical">
                 <h1>WHO AM I?</h1>
+                <img src="./asset/image/WavePattern.svg" alt="">
+                <div>
                 <p>Here is some text about me. I live in Linz and develop web applications and games in my free time. I also like to do sports and other activities like making music. This is just some random text about me to fill up this nice page.</p>
                 <p> Further information about me is on the CV page. I like bears and big boys very much! The best part of being a gamedev is to fulfill others.</p>
                 <p>Here is another paragraph to fill up the whole screen and to give me some better feeling how much text can be on that page.</p>
+            </div>
             </div>
         </div>
     </div>
@@ -59,9 +68,10 @@
         <ul>
             <li class="li-active">WEB</li>
             <li>GAMES</li>
-            <li>MULTI MEDIA</li>
+            <li>MULTIMEDIA</li>
         </ul>
         <div class="card-list">
+            <dot-pattern count-x="4" count-y="12" size="20" spacing="20" color="#0000001f"></dot-pattern> 
         <div class="card">
             <div class="card-img">
                 <img src="./asset/image/Taimi.png" alt="">
@@ -71,18 +81,25 @@
                 <p>Taimi is a time tracking tool to improve ones effective used time on the PC. With Taimi you can lock certain websites and programs that otherwise would hinder you on concentrating on your tasks.</p>
                 <p class="card-tags"> &lt;ANGULAR 6&gt;  &lt;ELECTRON&gt;  &lt;HTML&gt;  &lt;TYPESCRIPT&gt;  &lt;CSS&gt;</p>
             </div>
+            <img class="mobile" src="./asset/image/WavePatternThinMobile.svg" alt="">
+            <img class="web" class="divider"src="./asset/image/WavePatternThin.svg" alt="">
         </div>
     </div>
     </div>
     <div class="contact-container text-center ">
+        <dot-pattern count-x="4" count-y="4" size="30" spacing="20" color="#ffffff1f"></dot-pattern> 
+
         <h1 class="contact-heading">CONTACT</h1>
-        <div class="contact-email">savovuksan@gmail.com</div>
+        <div class="contact-email">
+            <img src="./asset/image/Mail.svg" alt="">
+           savovuksan@gmail.com
+        </div>
         <div class="contact-socialmedia">
             <div class="contact-img">
                 <img src="./asset/image/twitter.png" alt="">
             </div>
             <div class="contact-img">
-                <img src="./asset/image/twitter.png" alt="">
+                <img src="./asset/image/Itch.svg" alt="">
             </div>
         </div>
         <div class="contact-info">Made with <span class="luv">❤</span> in Austria </div>
@@ -91,8 +108,9 @@
             <img src="./asset/image/BearFlag.svg" alt="">
         </div>
     </div>
-    <script  src="./src/index.js"></script>
-    <script  src="./src/DotPattern.js"></script>
+    <script type="module" src="./src/index.js"></script>
+    <script type="module"  src="./src/DotPattern.js"></script>
     <script type="module" src="./src/Dummy.js"></script>
+    <script type="module" src="./src/Navigation.js"> </script>
 </body>
 </html>

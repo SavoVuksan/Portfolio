@@ -7,11 +7,10 @@ class DotPattern extends HTMLElement {
         this.pointSize = parseInt(this.getAttribute('size'));
         this.pointColor = this.getAttribute('color');
         this.spacing = parseInt(this.getAttribute('spacing'));
-       
         // Create a shadow root
         //let shadow = this.attachShadow({mode: 'closed'});
         const wrapper = document.createElement('div');
-        
+        wrapper.style.overflow = 'hidden';
         const dots = this.createDots(this.pointCountX,this.pointCountY);
         dots.forEach(dot => wrapper.appendChild(dot));
 
@@ -32,6 +31,7 @@ class DotPattern extends HTMLElement {
         const dots = [];
         for(let y = 1; y <= countY; y++){
             const row = document.createElement('div');
+            row.style.whiteSpace = 'nowrap';
             for(let x = 1; x <= countX; x++){
                 const point = document.createElement('div');
                 point.style.cssText = pointStlye ;
@@ -45,3 +45,4 @@ class DotPattern extends HTMLElement {
 }
 
 customElements.define('dot-pattern', DotPattern);
+export default DotPattern;

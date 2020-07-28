@@ -11,7 +11,8 @@
             z-index: -1;
             height: 100vh;
             width: unset;
-            transform: translate(-50%,0%) scale(-1,1);
+            object-position: top center;
+            
         }
     }
     
@@ -24,7 +25,32 @@
         :nth-child(1){
             margin-right: vars.$std-spacing;
         }   
+        >h1{
+            margin-right: vars.$std-spacing;
+        }
     }
+
+    .burger{
+        display: initial;
+        position: absolute;
+            left: 0px;
+            top: 0px;
+            margin-top: 20px;
+            margin-left: 20px;
+        >img{
+            width: 50px;
+        }
+    }
+
+    
+.arrow-down{
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    margin-bottom: vars.$std-spacing;
+    left: calc(50vw - 75px/2);
+    width: 75px;   
+}
 
     .heading{
         
@@ -43,6 +69,7 @@
         z-index: 2;
         display: none;
         img{
+            display: inline;
             width: 50px;
             color: white;
         }
@@ -56,18 +83,23 @@
         }
     }
 
+    dot-pattern{
+        display: none;
+    }
+
     .wai-container{
         padding: 0;
         padding-left: vars.$std-spacing;
         padding-right: vars.$std-spacing;
         grid-template-columns: 1fr;
-        height: minmax(100vh,initial);
+        height: initial;
         padding-bottom: 20px;
     }   
 
     .wai-left{
         text-align: center;
-        
+        margin-top: vars.$big-spacing;
+        margin-bottom: 0px;
     }
     .center{
         position: initial;
@@ -76,7 +108,7 @@
         transform: initial;
         display: inline-block;
         margin: auto;
-        margin-top: vars.$std-spacing;
+        margin-top: vars.$big-spacing;
     }
     $wai-img-size: 200px;
     .yellow-box{
@@ -102,7 +134,27 @@
             top: initial;
             left: initial;
             transform: initial;
-            
+            display: grid;
+            height: initial;
+            grid-template-columns: 1fr;
+            grid-template-rows: initial;
+            >h1{
+                grid-row: 2;
+                grid-column: 1;
+            }
+            >img{
+                grid-row: 1;
+                grid-column: 1;
+                margin: auto;
+                width: 100px;
+                margin-top: vars.$std-spacing;
+                margin-bottom: vars.$std-spacing;
+            }
+            >div{
+                grid-row: 3;
+                grid-column: 1;
+                margin-bottom: vars.$big-spacing;
+            }
         }
         h1{
             margin-top: 0px;
@@ -115,11 +167,32 @@
 
     .work-container{
        padding: 0 vars.$std-spacing 0 vars.$std-spacing;
+
+       ul{
+          
+       }
+       li{
+           margin: vars.$std-spacing/2;
+       }
     }
 
     .card{
         grid-template-columns: 1fr;
+        >img{
+            grid-row: 3;
+            grid-column: 1 ;
+            width: 80%;
+            margin: auto;
+            display: inline-block;
+            
+        }
   
+        .web{
+            display: none;
+        }
+        .mobile{
+            display: initial;
+        }
     }
     .card-img{
         grid-column: 1;
@@ -140,11 +213,12 @@
          p{
              font-size: vars.$text-size-m;
          }
+      
          
     }
 
     .contact-container{
-
+        grid-template-rows: 200px 1fr;
     }
     .contact-heading{
         grid-column: 1;
@@ -153,10 +227,18 @@
     .contact-email{
         grid-column: 1;
         grid-row: 2;
+        >img{
+            display: block;
+            margin: auto;
+            margin-bottom: vars.$std-spacing/4;
+        }
+        margin-bottom: vars.$big-spacing;
     }
     .contact-socialmedia{
         grid-column: 1;
         grid-row: 3;
+
+        margin-bottom: vars.$std-spacing;
     }
     .contact-info{
         grid-column: 1;

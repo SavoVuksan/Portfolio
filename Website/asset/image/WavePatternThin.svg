@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1127 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:bevel;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-396.931,-3338.54)">
+        <g transform="matrix(0.84375,0,0,1.09414,150,-38.5077)">
+            <g id="ZickZack" transform="matrix(0.664971,0,0,0.669262,293.671,1016.87)">
+                <g id="ZickZack1" serif:id="ZickZack" transform="matrix(1.25,0,0,0.478879,1477.04,2779.05)">
+                    <path d="M100,700L140,660L180,700L220,660L260,700L300,660L340,700L380,660L420,700" style="fill:none;stroke:black;stroke-opacity:0.13;stroke-width:7.21px;"/>
+                </g>
+                <g id="ZickZack2" serif:id="ZickZack" transform="matrix(1.25,0,0,0.478879,-122.957,2779.05)">
+                    <path d="M100,700L140,660L180,700L220,660L260,700L300,660L340,700L380,660L420,700" style="fill:none;stroke:black;stroke-opacity:0.13;stroke-width:7.21px;"/>
+                </g>
+                <g id="ZickZack3" serif:id="ZickZack" transform="matrix(1.25,0,0,0.478879,277.043,2779.05)">
+                    <path d="M100,700L140,660L180,700L220,660L260,700L300,660L340,700L380,660L420,700" style="fill:none;stroke:black;stroke-opacity:0.13;stroke-width:7.21px;"/>
+                </g>
+                <g id="ZickZack4" serif:id="ZickZack" transform="matrix(1.25,0,0,0.478879,677.043,2779.05)">
+                    <path d="M100,700L140,660L180,700L220,660L260,700L300,660L340,700L380,660L420,700" style="fill:none;stroke:black;stroke-opacity:0.13;stroke-width:7.21px;"/>
+                </g>
+                <g id="ZickZack5" serif:id="ZickZack" transform="matrix(1.25,0,0,0.478879,1077.04,2779.05)">
+                    <path d="M100,700L140,660L180,700L220,660L260,700L300,660L340,700L380,660L420,700" style="fill:none;stroke:black;stroke-opacity:0.13;stroke-width:7.21px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

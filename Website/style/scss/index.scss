@@ -77,14 +77,17 @@ li{
     display: grid;
     height: 100vh;
     overflow: hidden;
+    background-color: vars.$dark-gray;
     grid-template-columns: 33.33vw ;
     >img{
         grid-column: 2;
         grid-row: 1 / 3;
-        height: 100%;
-        width: unset;
-        z-index: -1;
-        filter: brightness(0.33);
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: left center;
+        z-index: -0;
+        filter: brightness(0.33) grayscale(1);
         transform: scale(-1,1);
     }
 }
@@ -98,17 +101,28 @@ li{
     color: white;
     text-align: center;
     font-size: vars.$heading;
+
+    
+
+   
+
     h1{
         margin-top: vars.$std-spacing;
     }
+
+
+    
 }
+
+
+
 
 .heading{
     text-align: left;
-    position: relative;
+    position: absolute;
     z-index: 1;
     top: 50%;
-    left:85%;
+    left:25%;
     transform: translate(0%,-50%);
     font-size: vars.$display-heading;
     h1{
@@ -116,12 +130,22 @@ li{
     }
 }
 
+.burger{
+    display: none;
+}
+
+.arrow-down{
+    display: none;
+}
+
 
 .nav{
+    
     grid-column: 2;
     grid-row: 1;
     background-color: vars.$dark-gray;
     text-align: center;
+    z-index: 1;
     ul{
         margin-top: vars.$std-spacing;
         color: white;
@@ -146,7 +170,7 @@ li{
 .wai-container{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   height: 100vh;
+   min-height: 100vh;
    >div{
        height: 100%;
 
@@ -157,15 +181,49 @@ li{
 .wai-right{
     >div{
         padding-right: vars.$big-spacing*2;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        >h1{
+            grid-column: 1;
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        >img{
+            grid-row: 1 / 3;
+            grid-column: 2;
+            width: 250px;
+            display: inline-block;
+            margin: auto;
+           
+        }
+        >div{
+            grid-row:3;
+            grid-column: 1 / 3;
+        }
     }
 }
 
+.wai-left{
+    overflow: hidden;
+    margin-bottom: 300px;
+}
 .center{
     position: relative;
     top: 50%;
     left: 25%;
     display: inline-block;
     transform: translate(-0%,-50%);
+    
+        
+    dot-pattern{
+        position: absolute;
+        right: -80px;
+        bottom: -100px;
+        z-index: -2;
+    }
+
 }
 .yellow-box{
     width: 400px;
@@ -203,11 +261,27 @@ li{
 
 .card-list{
     height: 800px;
+
+    dot-pattern{
+        position: absolute;
+        left: -80px;
+    }
 }
 
 .card{
     display: grid;
     grid-template-columns: 150px 1fr ;
+    >img{
+        grid-row: 2;
+        grid-column: 1 / 3;
+        width: 80%;
+        margin: auto;
+        display: inline-block;
+        
+    }
+    .mobile{
+        display: none;
+    }
 }
 .card-img{
     padding-left: vars.$std-spacing;
@@ -241,6 +315,11 @@ li{
     font-weight: bold;
     padding-bottom: vars.$std-spacing;
 
+    dot-pattern{
+        position: absolute;
+        left: -30px;
+        margin-top: -120px;
+    }
 }
 
 .contact-heading{
@@ -252,6 +331,11 @@ li{
     margin-top: 12.5px;
     grid-column: 1;
     grid-row: 2;
+    >img{
+        width: 20px;
+        display: inline;
+        vertical-align: bottom;
+    }
     
 }
 .contact-socialmedia{
@@ -299,3 +383,5 @@ li{
         margin-top: vars.$std-spacing;
     }
 }
+
+ 
