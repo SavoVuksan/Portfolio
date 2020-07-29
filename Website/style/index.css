@@ -36,8 +36,20 @@ li {
   margin-right: 30px;
 }
 
-.bg-signal {
+.bg-signal-1 {
   background-color: #FCE38A;
+}
+
+.bg-signal-2 {
+  background-color: #f38181;
+}
+
+.bg-signal-3 {
+  background-color: #eaffd0;
+}
+
+.bg-signal-4 {
+  background-color: #95e1d3;
 }
 
 .margin {
@@ -85,6 +97,10 @@ li {
 .padding-horizontal {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.invisible {
+  display: none;
 }
 
 .home-container {
@@ -141,11 +157,17 @@ li {
   display: none;
 }
 
+li {
+  user-select: none;
+  cursor: pointer;
+}
+
 .nav {
   grid-column: 2;
   grid-row: 1;
   background-color: #202020;
   text-align: center;
+  display: initial;
   z-index: 1;
 }
 .nav ul {

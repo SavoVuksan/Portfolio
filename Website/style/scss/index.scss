@@ -28,8 +28,18 @@ li{
     margin-right: 30px;
 }
 
-.bg-signal{
-    background-color:vars.$signal-color;
+
+.bg-signal-1{
+    background-color: vars.$signal-color1;
+}
+.bg-signal-2{
+    background-color: vars.$signal-color2;
+}
+.bg-signal-3{
+    background-color: vars.$signal-color3;
+}
+.bg-signal-4{
+    background-color: vars.$signal-color4;
 }
 .margin{
     margin: vars.$std-spacing vars.$std-spacing vars.$std-spacing vars.$std-spacing;
@@ -71,6 +81,10 @@ li{
 .padding-horizontal{
     padding-left: vars.$big-spacing * 2;
     padding-right: vars.$big-spacing * 2;
+}
+
+.invisible{
+    display: none;
 }
 
 .home-container{
@@ -138,6 +152,10 @@ li{
     display: none;
 }
 
+li{
+    user-select: none;
+    cursor: pointer;
+}
 
 .nav{
     
@@ -145,6 +163,7 @@ li{
     grid-row: 1;
     background-color: vars.$dark-gray;
     text-align: center;
+    display: initial;
     z-index: 1;
     ul{
         margin-top: vars.$std-spacing;
@@ -164,7 +183,7 @@ li{
 
 .li-active{
     font-weight: bold;
-    border-bottom: solid 5px vars.$signal-color;
+    border-bottom: solid 5px vars.$signal-color1;
 }
 
 .wai-container{
@@ -228,7 +247,7 @@ li{
 .yellow-box{
     width: 400px;
     height: 400px;
-    background-color: vars.$signal-color;
+    background-color: vars.$signal-color1;
     position: absolute;
     z-index: -1;
 }
