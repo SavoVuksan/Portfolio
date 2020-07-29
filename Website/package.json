@@ -4,6 +4,10 @@
   "description": "",
   "main": "./src/index.js",
 
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "jsdom"
+  },
   "scripts": {
     "test": "jest"
   },

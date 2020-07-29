@@ -1,19 +1,23 @@
+
+import './MatchMedia.js';
 import Navigation from '../src/Navigation';
 
-test('Navigation.active is toggling', () => {
-    const nav = new Navigation();
-    expect(nav.active).toBe(false);
-    nav.toggle();
-    expect(nav.active).toBe(true);
-});
 
 test('Navigation is active', () => {
-    const nav = new Navigation();
+    const nav = setupNavObject();
     nav.setActive(true);
     expect(nav.active).toBe(true);
 });
 
 test('Navigation active state is false', () => {
-    const nav = new Navigation();
+    const nav = setupNavObject();
     expect(nav.active).toBe(false);
 });
+
+function setupNavObject(){
+    const openBtn = document.createElement('div');
+    const closeBtn = document.createElement('div');
+    const navCtn = document.createElement('div');
+    const navs = [{caller: document.createElement('div'), target: document.createElement('div')}];
+    return new Navigation(openBtn,closeBtn, navCtn, navs);
+}
