@@ -6,6 +6,59 @@
   font-family: "Space Mono", monospace;
   src: url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 }
+@media (min-width: 600px) and (max-width: 1400px) {
+  .nav li:first-of-type {
+    display: none;
+  }
+  .nav li {
+    margin: 10px;
+  }
+  .nav ul {
+    padding: 0;
+  }
+
+  .padding-horizontal {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .yellow-box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+  }
+
+  .img-box {
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+  }
+
+  .center {
+    transform: initial;
+    top: initial;
+    left: initial;
+    position: initial;
+    display: block;
+    text-align: center;
+    margin-top: calc(50vh - 25%);
+  }
+  .center > dot-pattern {
+    margin-top: -50px;
+    display: block;
+    position: initial;
+  }
+
+  .wai-right > div {
+    padding-right: 0px;
+    grid-template-columns: 66% 33%;
+  }
+  .wai-right > div > img {
+    width: 100%;
+  }
+}
 @media only screen and (orientation: portrait) and (max-width: 600px) {
   .home-container {
     background-color: initial;
@@ -27,11 +80,8 @@
     width: 100%;
     text-align: right;
   }
-  .heading-container :nth-child(1) {
-    margin-right: 20px;
-  }
   .heading-container > h1 {
-    margin-right: 20px;
+    padding-right: 20px;
   }
 
   .burger {
@@ -111,6 +161,9 @@
     display: inline-block;
     margin: auto;
     margin-top: 50px;
+  }
+  .center > dot-pattern {
+    display: none;
   }
 
   .yellow-box {

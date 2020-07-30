@@ -8,7 +8,24 @@ const headingCtrl = createHeadingController();
 
 function createHeadingController(){
     const heading = document.querySelector('#profession');
-    const professions = ['Software Developer', 'Web Developer', 'Game Developer', 'Human'];
+    const professions = [
+        {
+            profession: 'Software Developer',
+            color: '#FCE38A'
+    },
+    {
+        profession: 'Web Developer',
+        color: '#f38181'
+    },
+    {
+        profession:  'Game Developer',
+        color: '#eaffd0'
+    },
+    {
+        profession: 'Human',
+        color: '#95e1d3'
+    }
+    ];
     return new HeadingController(heading, professions);
 }
 

@@ -2,16 +2,18 @@ export default class HeadingController {
     constructor(heading, professions) {
         this.heading = heading;
         this.professions = professions;
-        this.professions = this.professions.map((p) => p.toUpperCase());
+        this.professions.forEach(e => {
+            e.profession = e.profession.toUpperCase();
+        });
         this.sequence1();
     }
 
     sequence1() {
-        const timeout = 1000;
+        const timeout = 1500;
         let i = 0;
         const interval = setInterval(() => {
             if (i < this.professions.length) {
-                this.setHeading(this.professions[i],i);
+                this.setHeading(this.professions[i].profession,this.professions[i].color);
                 i++
             } else {
                 i = 0;
@@ -20,9 +22,8 @@ export default class HeadingController {
             }
         }, timeout);
     }
-    setHeading(profession,i) {
+    setHeading(profession,color) {
         this.heading.textContent = profession;
-        
-        this.heading.parentElement.classList.add('bg-signal-'+(i+1));
+        this.heading.parentElement.style.backgroundColor = color;
     }
 }

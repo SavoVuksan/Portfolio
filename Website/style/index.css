@@ -36,6 +36,11 @@ li {
   margin-right: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .bg-signal-1 {
   background-color: #FCE38A;
 }
@@ -149,6 +154,10 @@ li {
   margin: 10px 0px 10px 0px;
 }
 
+.color-transition {
+  transition: background-color 0.5s;
+}
+
 .burger {
   display: none;
 }
@@ -229,17 +238,18 @@ li {
 }
 
 .center {
-  position: relative;
-  top: 50%;
-  left: 25%;
-  display: inline-block;
-  transform: translate(0%, -50%);
+  transform: initial;
+  top: initial;
+  left: initial;
+  position: initial;
+  display: block;
+  text-align: center;
+  margin-top: calc(50vh - 25%);
 }
-.center dot-pattern {
-  position: absolute;
-  right: -80px;
-  bottom: -100px;
-  z-index: -2;
+.center > dot-pattern {
+  margin-top: -50px;
+  display: block;
+  position: initial;
 }
 
 .yellow-box {
@@ -247,17 +257,27 @@ li {
   height: 400px;
   background-color: #FCE38A;
   position: absolute;
+  display: inline-block;
   z-index: -1;
 }
 
 .img-box {
   width: 400px;
   height: 400px;
+  display: inline-block;
   overflow: hidden;
   padding-top: 50px;
   padding-left: 50px;
 }
 
+.padding-horizontal {
+  padding: 0;
+}
+
+.work-container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .work-container > img {
   width: 200px;
   display: block;

@@ -1,5 +1,62 @@
 @use 'vars';
 
+@media (min-width: 600px) and (max-width: 1400px){
+    .nav{
+        li:first-of-type{
+            display: none;
+        }
+        li{
+            margin: vars.$std-spacing/2;
+        }
+        ul{
+            padding: 0;
+        }
+    }
+
+    .padding-horizontal{
+        padding-left:vars.$std-spacing ;
+        padding-right: vars.$std-spacing;
+    }
+
+    $wai-img-size: 200px;
+    .yellow-box{
+        width: $wai-img-size;
+        height: $wai-img-size;
+        display: inline-block;
+    }
+    .img-box{
+        padding-left: vars.$std-spacing;
+        padding-top: vars.$std-spacing;
+        width: $wai-img-size;
+        height: $wai-img-size;
+        display: inline-block;
+    }
+
+    .center{
+        transform: initial;
+        top: initial;
+        left: initial;
+        position: initial;
+        display: block;
+        text-align: center;
+        margin-top: calc(50vh - 25%);
+        >dot-pattern{
+            margin-top:  -50px;
+
+            display: block;
+            position: initial;
+        }
+    }
+
+    .wai-right > div{
+        padding-right: 0px;
+        grid-template-columns: 66% 33%;
+        > img{
+            width: 100%;
+        }
+    }
+}
+
 @media only screen  and (orientation: portrait) and (max-width: 600px){
     .home-container{
         background-color: initial;
@@ -22,11 +79,8 @@
         grid-row: 1;
         width: 100%;
         text-align: right;
-        :nth-child(1){
-            margin-right: vars.$std-spacing;
-        }   
         >h1{
-            margin-right: vars.$std-spacing;
+            padding-right: vars.$std-spacing;
         }
     }
 
@@ -109,6 +163,9 @@
         display: inline-block;
         margin: auto;
         margin-top: vars.$big-spacing;
+        >dot-pattern{
+            display: none;
+        }
     }
     $wai-img-size: 200px;
     .yellow-box{

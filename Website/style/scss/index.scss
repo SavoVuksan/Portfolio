@@ -28,6 +28,10 @@ li{
     margin-right: 30px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
 .bg-signal-1{
     background-color: vars.$signal-color1;
@@ -144,6 +148,10 @@ li{
     }
 }
 
+.color-transition{
+    transition: background-color 0.5s;
+}
+
 .burger{
     display: none;
 }
@@ -229,39 +237,45 @@ li{
     margin-bottom: 300px;
 }
 .center{
-    position: relative;
-    top: 50%;
-    left: 25%;
-    display: inline-block;
-    transform: translate(-0%,-50%);
-    
-        
-    dot-pattern{
-        position: absolute;
-        right: -80px;
-        bottom: -100px;
-        z-index: -2;
-    }
+    transform: initial;
+    top: initial;
+    left: initial;
+    position: initial;
+    display: block;
+    text-align: center;
+    margin-top: calc(50vh - 25%);
+    >dot-pattern{
+        margin-top:  -50px;
 
+        display: block;
+        position: initial;
+    }
 }
 .yellow-box{
     width: 400px;
     height: 400px;
     background-color: vars.$signal-color1;
     position: absolute;
+    display: inline-block;
     z-index: -1;
 }
 
 .img-box{
     width: 400px;
     height: 400px;
+    display: inline-block;
     overflow: hidden;
     padding-top: vars.$big-spacing;
     padding-left: vars.$big-spacing;
 }
 
+.padding-horizontal{
+    padding: 0 ;
+}
+
 .work-container{
- 
+    padding-left: vars.$big-spacing*2;
+    padding-right: vars.$big-spacing*2;
 
     >img{
         width: 200px;
