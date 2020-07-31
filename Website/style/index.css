@@ -292,16 +292,25 @@ li {
 }
 
 .card-list {
-  height: 800px;
+  margin-top: 50px;
+  overflow-y: scroll;
+  margin-bottom: 50px;
 }
 .card-list dot-pattern {
   position: absolute;
   left: -80px;
 }
 
+a > .card {
+  color: black;
+}
+
 .card {
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 150px 1fr;
+  cursor: pointer;
+  user-select: none;
 }
 .card > img {
   grid-row: 2;

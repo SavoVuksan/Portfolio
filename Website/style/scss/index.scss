@@ -293,17 +293,24 @@ li{
 }
 
 .card-list{
-    height: 800px;
-
+   
+    margin-top: vars.$big-spacing;
+    overflow-y: scroll;
+    margin-bottom: vars.$big-spacing;
     dot-pattern{
         position: absolute;
         left: -80px;
     }
 }
-
+a>.card{
+    color: black;
+}
 .card{
+    margin-bottom: vars.$big-spacing;
     display: grid;
     grid-template-columns: 150px 1fr ;
+    cursor: pointer;
+    user-select: none;
     >img{
         grid-row: 2;
         grid-column: 1 / 3;

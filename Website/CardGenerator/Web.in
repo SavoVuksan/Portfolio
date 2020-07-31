@@ -1,0 +1,15 @@
+Driverslog
+Did you ever share your car with family members or friends on a regular basis and wanted to keep track of the rides? Yes? Then Driverslog is the right app! With it you can easily track the rides you make. Where you want and when you want.
+Firebase, JS, HTML, CSS, Bootstrap
+
+Taimi
+Taimi is a productivity tracking app. It minimizes distractions by blocking specific websites and programs so you can concentrate on the really important things. It also tracks how much time you spend on the PC.
+Typescript, Electron, Angular, CSS, HTML
+
+MoodMonitor Client
+MoodMonitor is your personal online diary. You write entries just like in any other diary with the little twist that you add your mood for that day. MoodMonitor provides you also with the ability to add tags to your entries, so you can easily find them again. 
+Typescript, Angular, CSS, HTML
+
+MoodMonitor Server
+This is the Sever written for MoodMonitor the mood tracking diary. It is written with Node.js and Express and uses the NoSQL DB MongoDB. It encrypts the data with bcrypt and handles authentication with Passport.js. It also uses the OR Mapper Mongoose.
+JS, NodeJS, Mongo DB, Mongoose, PassportJS, BcryptJS

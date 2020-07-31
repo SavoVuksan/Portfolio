@@ -37,10 +37,6 @@ function createTabManager(){
 {
     caller: document.querySelector('#games'),
     target: document.querySelector('.games')
-},
-{
-    caller: document.querySelector('#multimedia'),
-    target: document.querySelector('.multimedia')
 }];
     return new TabManager(tabs);
 }
