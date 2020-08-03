@@ -1,0 +1,26 @@
+$dark-gray: #202020;
+$light-gray: #AEAEAE;
+$signal-color1: #FCE38A;
+$signal-color2: #f38181;
+$signal-color3: #eaffd0;
+$signal-color4: #95e1d3;
+$heading: 0.8em;
+$display-heading: 1.5em;
+$display-heading2: 1.2em;
+$display-heading-m: 0.8em;
+$display-heaidng2-m: 0.6em;
+$text-size: 1.2em;
+$text-size-m: 11pt;
+$std-spacing: 20px;
+$big-spacing: 50px;
+
+
+@font-face{
+    font-family: 'Work Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+}
+
+@font-face{
+    font-family: 'Space Mono', monospace;
+    src: url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
