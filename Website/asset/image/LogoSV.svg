@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1080 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,-0.0885874,1,160.95,158.971)">
+        <text x="163.405px" y="560.229px" style="font-family:'BebasNeue-Bold', 'Bebas Neue';font-weight:700;font-size:512px;">S</text>
+    </g>
+    <g transform="matrix(-0.892157,-1.09258e-16,1.22465e-16,-1,1365.86,951.865)">
+        <path d="M778.57,293.55C784.816,281.058 798.714,273.013 814.046,273.013C829.378,273.013 843.276,281.058 849.522,293.55C884.867,364.24 938.188,470.883 969.025,532.556C974.385,543.277 973.298,555.691 966.135,565.539C958.972,575.387 946.708,581.33 933.549,581.33C831.478,581.33 634.68,581.33 634.68,581.33C634.68,581.33 726.291,398.109 778.57,293.55Z" style="fill:rgb(65,124,242);"/>
+    </g>
+</svg>

@@ -51,7 +51,24 @@
     position: initial;
   }
 
+  .wai-left {
+    margin-bottom: 50px;
+  }
+  .wai-left > .center {
+    margin-top: 50px;
+  }
+
+  .wai-container {
+    grid-template-columns: 1fr;
+  }
+
+  .wai-right {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
   .wai-right > div {
+    overflow: hidden;
     padding-right: 0px;
     grid-template-columns: 66% 33%;
   }
@@ -183,8 +200,10 @@
     grid-row: 2;
     text-align: center;
     font-size: 11pt;
+    overflow: hidden;
   }
   .wai-right .center-vertical {
+    overflow: hidden;
     padding: 0;
     position: initial;
     top: initial;
